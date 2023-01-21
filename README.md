@@ -22,7 +22,15 @@ Primero creamos una carpeta en el escritorio para hacer el proyecto y después a
          depends_on:                                Nos permite que el inicio de la ejecución de un servicio dependa de otras    
           - db                                      El inicio va a depender de la base de datos        
          
-         
+Respuesta: Aclarar que si el puerto 5432 o el 8069 del ordenador (local) está ocupado por otro servicio lo podremos 
+solucionar siguiendo estes pasos:
+    1º- Usaremos el comando **netstat** que sirve para generar visualizaciones que muestran el estado de la red 
+        y estadísticas de protocolo donde podremos encontrar si algún servicio está ejecutándose enel puerto 5432 en 
+        este caso.
+    2º- En la situación de que haya un servicio ocupando ese puerto tendremos que pararlo y para ello usaremos el 
+        comando **service stop** entre medias escribiremos el nombre del servicio en cuestión. Por ejemplo si hay un 
+        postgres ejecutándose en ese puerto haremos un **service postgres stop**, si hiciese falta privilegios solo 
+        necesitariamos escribir _sudo_ antes del comando **sudo service postgres stop**.
        
 Una vez hecho el docker.compose.yml lo iniciamos. Después de haberlo iniciado nos conectamos a la base de datos del postgres poninendo las creedenciales, en este caso:
 
