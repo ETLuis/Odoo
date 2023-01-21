@@ -12,4 +12,13 @@ Primero creamos una carpeta en el escritorio para hacer el proyecto y después a
           - POSTGRES_USER=odoo
          ports:
           - "5432:5432"
- 
+         volumes:
+          - ./datos:/var/lib/postgresql/data
+        odoo:
+         image: odoo:14.0
+         container_name: dam22_odoo
+         ports:
+          - "8069:8069"
+        depends_on:
+          - db
+         
