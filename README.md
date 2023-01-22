@@ -37,6 +37,9 @@ Una vez hecho el docker.compose.yml lo iniciamos. Después de haberlo iniciado n
 ![image](https://user-images.githubusercontent.com/91607146/212317497-2dac7aa7-935c-4688-9298-77963f81ea56.png)
 ![image](https://user-images.githubusercontent.com/91607146/212642426-12ced54c-ce72-495b-8581-14683e8be531.png)
 
+
 Después de tener la conexión hecha con la base datos procedemos a la instalación del oddo. Para ello pondremos localhost:8069 (dónde _8069_ es el puerto del odoo que pusimos en el docker-compose)
-![image](https://user-images.githubusercontent.com/91607146/213924922-dfbae07e-1465-4855-a5b2-6c4a1686657f.png)
-Una vez aquí solo tendremos que rellenar los campos que necesita el odoo y ya lo tendríamos instalado!! 
+
+![image](https://user-images.githubusercontent.com/91607146/213925736-1d42e527-3590-471f-8239-d898c5940abc.png)
+
+Una vez aquí solo tendremos que rellenar los campos que necesita el odoo, darle a "create database" y ya tendríamos el **Odoo**!! 
